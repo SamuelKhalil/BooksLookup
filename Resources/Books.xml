@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<books>
+    <book isbn="1-861002-85-8" found="false">
+        <title>Professional Java XML Programming</title>
+        <publisher>Wrox Press</publisher>
+        <price>35.99</price>
+        <pages>772</pages>
+        <chapters>13</chapters>
+        <appendices>13</appendices>
+        <authors>
+            <author fname="Alexander" lname="Nakhimovsky"/>
+            <author fname="Tom" lname="Myers"/>
+        </authors>
+        <reviews>
+            <review eval="4">Good introduction to Java and XML</review>
+            <review eval="5">Comprehensive coverage of latest XML and Java news</review>
+        </reviews>
+    </book>
+    <book isbn="1-861003-12-9">
+        <title>XSLT Programmer's Reference</title>
+        <publisher>Wrox Press</publisher>
+        <price>25.99</price>
+        <pages>777</pages>
+        <chapters>10</chapters>
+        <appendices>2</appendices>
+        <authors>
+            <author fname="Michael" lname="Kay"/>
+        </authors>
+        <reviews>
+            <review eval="5">Superb and detailed descriptions of everything</review>
+            <review eval="5">Good examples</review>
+        </reviews>
+    </book>
+    <book isbn="0-201-63361-2" discounted="0.85">
+        <title>Design Patterns</title>
+        <publisher>Addison Wesley</publisher>
+        <price>29.95</price>
+        <pages>395</pages>
+        <chapters>6</chapters>
+        <appendices>3</appendices>
+        <authors>
+            <author fname="Erich" lname="Gamma"/>
+            <author fname="Richard" lname="Helm"/>
+            <author fname="Ralph" lname="Johnson"/>
+            <author fname="John" lname="Vlissides"/>
+        </authors>
+        <reviews>
+            <review eval="5">Excellent coverage of OO design patterns</review>
+            <review eval="4">The definitive text on reusable patterns</review>
+            <review eval="5">A must-read for all OO designers and architects</review>
+        </reviews>
+    </book>
+    <book isbn="1-56592-515-7">
+        <title>Web Design in a Nutshell</title>
+        <publisher>O'Reilly</publisher>
+        <price>18.95</price>
+        <pages>560</pages>
+        <chapters>27</chapters>
+        <appendices>5</appendices>
+        <authors>
+            <author fname="Jennifer" lname="Niederst"/>
+        </authors>
+        <reviews></reviews>
+    </book>
+	<book isbn="12354adda">
+		<title>XSLT Programmer's Reference</title>
+		<publisher>Wrox Press</publisher>
+		<price>25.99</price>
+		<pages>777</pages>
+		<chapters>10</chapters>
+		<appendices>2</appendices>
+		<authors>
+			<author fname="Michael" lname="Kay"/>
+		</authors>
+		<reviews>
+			<review eval="5">Superb and detailed descriptions of everything</review>
+			<review eval="5">Good examples</review>
+		</reviews>
+	</book>
+</books>
