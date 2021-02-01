@@ -6,7 +6,9 @@ This application should take in the following command line arguments:
 •	-Output=”<Path to Output.txt>”
 •	-E (indicates whether or not to log errors to file)
 For example, the application may be executed as shown below, although the parameters could be in any order:
-Test.exe -Input="C:\Temp\Books.xml" -Output="C:\Temp\Output.txt" -E
+
+
+Example of how it works   Test.exe -Input="C:\Temp\Books.xml" -Output="C:\Temp\Output.txt" -E
 
 The application should parse each of the ISBN’s out of Books.xml and call a REST API hosted by openlibrary.  A sample call for a book with ISBN 123456789 looks like:  http://openlibrary.org/api/books?bibkeys=ISBN:123456789&jscmd=data&format=json.  If the REST call returns no results for that ISBN, add an attribute to the appropriate <book> node called “found” with a value of “false”.  If results are found, add a “found” attribute with a value of “true”, as well as create the following nodes within the appropriate <book> node:
 •	<publishDate> node populated by “publish_date” from the REST call
