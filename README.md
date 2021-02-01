@@ -10,4 +10,4 @@ How to run the application?
 	ex.	BooksLookup.exe -Input="C:\Temp\Books.xml" -Output="C:\Temp\Output.txt" -E 
 
 ![alt text](https://github.com/SamuelKhalil/BooksLookup/blob/master/Resources/HowItWorks.PNG?raw=true)
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/SamuelKhalil/BooksLookup/blob/master/Resources/LoggerWorking.PNG?raw=true)
