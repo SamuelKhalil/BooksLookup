@@ -10,13 +10,38 @@ using Newtonsoft.Json;
 
 namespace BooksLookup.DAO
 {
+    /// <summary>
+    /// This class is used to acess data from different sources
+    /// like apis and files.
+    /// </summary>
     class BooksDAO : IBooksDAO
     {
+        /// <summary>
+        /// Input path local variable.
+        /// </summary>
         private string inputPath { get; set; }
+        /// <summary>
+        /// output path local variable.
+        /// </summary>
         private string outputPath { get; set; }
+        /// <summary>
+        /// path to the modified xml file.
+        /// </summary>
         private string modOutputPath { get; set; }
+        /// <summary>
+        /// instance of the logger object.
+        /// </summary>
         private readonly Logger logger = null;
+        /// <summary>
+        /// Instance of the Program Options object that is used to access user 
+        /// defiend inputs.
+        /// </summary>
         ProgramOptions _programOptions;
+        /// <summary>
+        /// Constructor that is used to initialize local variables and 
+        /// instances of objects to be used in this class.
+        /// </summary>
+        /// <param name="programOptions"></param>
         public BooksDAO(ProgramOptions programOptions)
         {
             _programOptions = programOptions;
@@ -24,6 +49,11 @@ namespace BooksLookup.DAO
             inputPath = _programOptions.inputLocation;
             outputPath = _programOptions.outputLocation;
         }
+        /// <summary>
+        /// This method is used to retrieve all books from xml file that is 
+        /// inputed by the used as app parameter. 
+        /// </summary>
+        /// <returns>Object of the books in the xml</returns>
         public List<Book> GetBooksFromXML()
         {
             List<Book> books = new List<Book>();
@@ -87,7 +117,13 @@ namespace BooksLookup.DAO
 
             return books;
         }
-
+        /// <summary>
+        /// This method is used to retrieve a book from the Open Library API if 
+        /// the book is found.
+        /// </summary>
+        /// <param name="isbn">isbn number of the book to look up</param>
+        /// <returns>Book instance that has the subjects and published date 
+        /// as well as a found flag of true</returns>
         public Book GetOnlineBook(string isbn)
         {
                 Book onlineBook = new Book();
@@ -113,7 +149,12 @@ namespace BooksLookup.DAO
             }
             return onlineBook;
         }
-
+        /// <summary>
+        /// This method is used to output books list to a text file 
+        /// separted in columns. This is similar to tab delimated but I
+        /// think a better format for the data.
+        /// </summary>
+        /// <param name="books">books object to be outputed</param>
         public void OutputToFile(List<Book> books)
         {
             try
@@ -146,7 +187,13 @@ namespace BooksLookup.DAO
                 logger.Log(e.Message);
             }
         }
-
+        /// <summary>
+        /// Outputs the updated books to an xml file in the same location 
+        /// as the output paramter provided by the user.
+        /// </summary>
+        /// <param name="books">list of books to be outputed</param>
+        /// <param name="xmlFileName">Name of the file to be used as the 
+        /// modified xml file</param>
         public void OutputToFile(List<Book> books, string xmlFileName)
         {
             try {
