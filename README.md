@@ -8,6 +8,3 @@ How to run the application?
 4. cd to "\bin\Debug\.net5.0"
 5. Execute the application 
 	ex.	BooksLookup.exe -Input="C:\Temp\Books.xml" -Output="C:\Temp\Output.txt" -E 
-
-![alt text](https://github.com/SamuelKhalil/BooksLookup/blob/master/Resources/HowItWorks.PNG?raw=true)
-![alt text](https://github.com/SamuelKhalil/BooksLookup/blob/master/Resources/LoggerWorking.PNG?raw=true)
